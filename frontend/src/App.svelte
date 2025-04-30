@@ -1,5 +1,14 @@
 <script>
-  console.log("hello world")
+  import { Route, Router } from "svelte5-router";
+  import About from "./routes/About.svelte";
+  import Index from "./routes/Index.svelte";
+  import Play from "./routes/Play.svelte";
 </script>
 
-<h1 class="text-2xl">Hola</h1>
+<Router>
+  <div>
+    <Route path="/" component={Index} />
+    <Route path="/play" component={Play} />
+    <Route path="/about" component={About} />
+  </div>
+</Router>
