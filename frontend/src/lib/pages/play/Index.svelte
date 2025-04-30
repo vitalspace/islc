@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Canvas } from "@threlte/core";
-  import { World, Debug } from "@threlte/rapier";
+  import { Debug, World } from "@threlte/rapier";
   import Scene from "./Scene.svelte";
 
-  let debug = $state(false);
+  let debug = $state(true);
 </script>
 
 <div class="h-screen">

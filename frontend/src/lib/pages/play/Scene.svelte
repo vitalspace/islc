@@ -1,7 +1,11 @@
 <script>
   import { T } from "@threlte/core";
+  import { Sky } from "@threlte/extras";
   import Ground from "./componets/world/Ground.svelte";
 </script>
+
+<Sky elevation={0.5} azimuth={130} />
+<Ground />
 
 <T.PerspectiveCamera
   makeDefault
@@ -17,5 +21,3 @@
   <T.BoxGeometry args={[1, 2, 1]} />
   <T.MeshStandardMaterial color="blue" />
 </T.Mesh>
-
-<Ground />
