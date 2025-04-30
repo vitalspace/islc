@@ -1,1 +1,18 @@
-<h1>Hello play</h1>
+<script lang="ts">
+  import { Canvas } from "@threlte/core";
+  import { World, Debug } from "@threlte/rapier";
+  import Scene from "./Scene.svelte";
+
+  let debug = $state(false);
+</script>
+
+<div class="h-screen">
+  <Canvas>
+    <World>
+      {#if debug}
+        <Debug />
+      {/if}
+      <Scene />
+    </World>
+  </Canvas>
+</div>
