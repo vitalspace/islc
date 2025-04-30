@@ -16,5 +16,15 @@
     "svelte-check": "^4.1.5",
     "typescript": "~5.7.2",
     "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.16.0",
+    "@tailwindcss/vite": "^4.1.5",
+    "@threlte/core": "^8.0.2",
+    "@threlte/extras": "^9.1.4",
+    "@threlte/rapier": "^3.1.1",
+    "@types/three": "^0.176.0",
+    "tailwindcss": "^4.1.5",
+    "three": "^0.176.0"
   }
 }
